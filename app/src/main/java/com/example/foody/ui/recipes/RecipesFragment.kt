@@ -13,7 +13,9 @@ import com.example.foody.adapters.RecipesAdapter
 import com.example.foody.databinding.FragmentRecipesBinding
 import com.example.foody.util.NetworkResult
 import com.example.foody.viewmodels.RecipesViewModel
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class RecipesFragment : Fragment() {
 
     lateinit var binding: FragmentRecipesBinding
@@ -32,7 +34,7 @@ class RecipesFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         // Inflate the layout for this fragment
         binding= FragmentRecipesBinding.inflate(layoutInflater)
 
