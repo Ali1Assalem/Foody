@@ -9,15 +9,36 @@
         android:id="@+id/recipesFragment"
         android:name="com.example.foody.ui.recipes.RecipesFragment"
         android:label="fragment_recipes"
-        tools:layout="@layout/fragment_recipes" />
+        tools:layout="@layout/fragment_recipes" >
+        <action
+            android:id="@+id/action_recipesFragment_to_recipesBottomSheet"
+            app:destination="@id/recipesBottomSheet" />
+        <argument
+            android:name="backFromBottomSheet"
+            app:argType="boolean"
+            android:defaultValue="false" />
+    </fragment>
+
     <fragment
         android:id="@+id/favoriteRecipesFragment"
         android:name="com.example.foody.ui.favorites.FavoriteRecipesFragment"
         android:label="fragment_favorite_recipes"
         tools:layout="@layout/fragment_favorite_recipes" />
+
     <fragment
         android:id="@+id/foodJokeFragment"
         android:name="com.example.foody.ui.foodjoke.FoodJokeFragment"
         android:label="fragment_food_joke"
         tools:layout="@layout/fragment_food_joke" />
+
+    <dialog
+        android:id="@+id/recipesBottomSheet"
+        android:name="com.example.foody.ui.recipes.bottomsheet.RecipesBottomSheet"
+        android:label="recipes_bottom_sheet"
+        tools:layout="@layout/recipes_bottom_sheet" >
+        <action
+            android:id="@+id/action_recipesBottomSheet_to_recipesFragment"
+            app:destination="@id/recipesFragment" />
+    </dialog>
+
 </navigation>
