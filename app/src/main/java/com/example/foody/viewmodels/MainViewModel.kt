@@ -6,7 +6,8 @@ import android.net.ConnectivityManager
 import android.net.NetworkCapabilities
 import androidx.lifecycle.*
 import com.example.foody.data.Repository
-import com.example.foody.data.database.RecipesEntity
+import com.example.foody.data.database.entities.FavoritesEntity
+import com.example.foody.data.database.entities.RecipesEntity
 import com.example.foody.models.FoodRecipe
 import com.example.foody.util.NetworkResult
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -22,23 +23,35 @@ class MainViewModel @Inject constructor(
     application: Application
 ) : AndroidViewModel(application) {
 
-    //** ROOM */
 
-    val readRecipes : LiveData<List<RecipesEntity>> = repository.local.readDatabase().asLiveData()
+    /** ROOM DATABASE */
 
+    val readRecipes: LiveData<List<RecipesEntity>> = repository.local.readRecipes().asLiveData()
+    val readFavoriteRecipes: LiveData<List<FavoritesEntity>> = repository.local.readFavoriteRecipes().asLiveData()
 
     private fun insertRecipes(recipesEntity: RecipesEntity) =
         viewModelScope.launch(Dispatchers.IO) {
             repository.local.insertRecipes(recipesEntity)
         }
 
+    private fun insertFavoriteRecipe(favoritesEntity: FavoritesEntity) =
+        viewModelScope.launch(Dispatchers.IO) {
+            repository.local.insertFavoriteRecipes(favoritesEntity)
+        }
 
+    private fun deleteFavoriteRecipe(favoritesEntity: FavoritesEntity) =
+        viewModelScope.launch(Dispatchers.IO) {
+            repository.local.deleteFavoriteRecipe(favoritesEntity)
+        }
 
-    //** RETROFIT */
+    private fun deleteAllFavoriteRecipes() =
+        viewModelScope.launch(Dispatchers.IO) {
+            repository.local.deleteAllFavoriteRecipes()
+        }
 
+    /** RETROFIT */
     var recipesResponse: MutableLiveData<NetworkResult<FoodRecipe>> = MutableLiveData()
     var searchedRecipesResponse: MutableLiveData<NetworkResult<FoodRecipe>> = MutableLiveData()
-
 
     fun getRecipes(queries: Map<String, String>) = viewModelScope.launch {
         getRecipesSafeCall(queries)
@@ -47,7 +60,6 @@ class MainViewModel @Inject constructor(
     fun searchRecipes(searchQuery: Map<String, String>) = viewModelScope.launch {
         searchRecipesSafeCall(searchQuery)
     }
-
 
     private suspend fun getRecipesSafeCall(queries: Map<String, String>) {
         recipesResponse.value = NetworkResult.Loading()
@@ -86,7 +98,6 @@ class MainViewModel @Inject constructor(
         val recipesEntity = RecipesEntity(foodRecipe)
         insertRecipes(recipesEntity)
     }
-
 
     private fun handleFoodRecipesResponse(response: Response<FoodRecipe>): NetworkResult<FoodRecipe>? {
         when {
