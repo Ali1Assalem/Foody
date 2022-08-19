@@ -16,16 +16,20 @@ import com.example.foody.databinding.ActivityDetailsBinding
 import com.example.foody.ui.ingredients.IngredientsFragment
 import com.example.foody.ui.instructions.InstructionsFragment
 import com.example.foody.ui.overview.OverViewFragment
+import com.example.foody.util.Constants.Companion.RECIPE_RESULT_KEY
 import com.example.foody.viewmodels.MainViewModel
 import com.google.android.material.snackbar.Snackbar
+import com.google.android.material.tabs.TabLayoutMediator
 import dagger.hilt.android.AndroidEntryPoint
+import java.lang.Exception
 
 @AndroidEntryPoint
 class DetailsActivity : AppCompatActivity() {
+
     private lateinit var binding: ActivityDetailsBinding
-    private val mainViewModel: MainViewModel by viewModels()
 
     private val args by navArgs<DetailsActivityArgs>()
+    private val mainViewModel: MainViewModel by viewModels()
 
     private var recipeSaved = false
     private var savedRecipeId = 0
@@ -52,7 +56,7 @@ class DetailsActivity : AppCompatActivity() {
         titles.add("Instructions")
 
         val resultBundle = Bundle()
-        resultBundle.putParcelable("recipeBundle", args.result)
+        resultBundle.putParcelable(RECIPE_RESULT_KEY, args.result)
 
         val adapter = PagerAdapter(
             resultBundle,
