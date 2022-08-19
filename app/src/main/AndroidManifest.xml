@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.foody" >
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    package="com.example.foody">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:name=".MyApplication"
         android:allowBackup="true"
@@ -10,11 +12,17 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
+        android:usesCleartextTraffic="true"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Foody" >
+        android:theme="@style/Theme.Foody">
+        <activity
+            android:name=".ui.DetailsActivity"
+            android:theme="@style/DetailsActivityStyle"
+            android:label="Details"/>
         <activity
             android:name=".ui.MainActivity"
-            android:exported="true" >
+            android:exported="true"
+            android:label="Foody">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
