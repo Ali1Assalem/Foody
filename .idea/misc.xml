@@ -8,7 +8,7 @@
         <entry key="..\:/Users/ALI/AndroidStudioProjects/Foody/app/src/main/res/font/courgette.xml" value="0.23020833333333332" />
         <entry key="..\:/Users/ALI/AndroidStudioProjects/Foody/app/src/main/res/layout/activity_details.xml" value="0.2" />
         <entry key="..\:/Users/ALI/AndroidStudioProjects/Foody/app/src/main/res/layout/activity_main.xml" value="0.22" />
-        <entry key="..\:/Users/ALI/AndroidStudioProjects/Foody/app/src/main/res/layout/favorite_recipes_row_layout.xml" value="0.2" />
+        <entry key="..\:/Users/ALI/AndroidStudioProjects/Foody/app/src/main/res/layout/favorite_recipes_row_layout.xml" value="0.14" />
         <entry key="..\:/Users/ALI/AndroidStudioProjects/Foody/app/src/main/res/layout/fragment_favorite_recipes.xml" value="0.1" />
         <entry key="..\:/Users/ALI/AndroidStudioProjects/Foody/app/src/main/res/layout/fragment_food_joke.xml" value="0.2" />
         <entry key="..\:/Users/ALI/AndroidStudioProjects/Foody/app/src/main/res/layout/fragment_ingredients.xml" value="0.2" />
@@ -22,6 +22,8 @@
         <entry key="..\:/Users/ALI/AndroidStudioProjects/Foody/app/src/main/res/layout/recipes_row_layout.xml" value="0.25" />
         <entry key="..\:/Users/ALI/AndroidStudioProjects/Foody/app/src/main/res/menu/bottom_nav_menu.xml" value="0.2" />
         <entry key="..\:/Users/ALI/AndroidStudioProjects/Foody/app/src/main/res/menu/details_menu.xml" value="0.33" />
+        <entry key="..\:/Users/ALI/AndroidStudioProjects/Foody/app/src/main/res/menu/favorite_recipes_menu.xml" value="0.1" />
+        <entry key="..\:/Users/ALI/AndroidStudioProjects/Foody/app/src/main/res/menu/favorites_contextual_menu.xml" value="0.1734375" />
         <entry key="..\:/Users/ALI/AndroidStudioProjects/Foody/app/src/main/res/menu/recipes_menu.xml" value="0.2" />
       </map>
     </option>

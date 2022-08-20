@@ -48,4 +48,5 @@
     <color name="bottomNavItemColor">@color/darkGray</color>
     <color name="bottomNavCheckedItemColor">@color/colorPrimary</color>
 
+
 </resources>
