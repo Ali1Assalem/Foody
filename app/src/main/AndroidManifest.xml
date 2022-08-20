@@ -9,18 +9,20 @@
         android:name=".MyApplication"
         android:allowBackup="true"
         android:fullBackupContent="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/ic_launcher_foreground"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/ic_launcher_foreground"
         android:usesCleartextTraffic="true"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Foody">
+        android:theme="@style/SplashScreenStyle">
         <activity
             android:name=".ui.DetailsActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/DetailsActivityStyle"
             android:label="Details"/>
         <activity
             android:name=".ui.MainActivity"
+            android:screenOrientation="portrait"
             android:exported="true"
             android:label="Foody">
             <intent-filter>

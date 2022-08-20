@@ -3,8 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/ALI/AndroidStudioProjects/Foody/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.139" />
         <entry key="..\:/Users/ALI/AndroidStudioProjects/Foody/app/src/main/res/drawable/gradient_overlay.xml" value="0.1385" />
+        <entry key="..\:/Users/ALI/AndroidStudioProjects/Foody/app/src/main/res/drawable/ic_checkmark.xml" value="0.139" />
+        <entry key="..\:/Users/ALI/AndroidStudioProjects/Foody/app/src/main/res/drawable/ic_food_joke_background.xml" value="0.139" />
+        <entry key="..\:/Users/ALI/AndroidStudioProjects/Foody/app/src/main/res/drawable/ic_food_joke_background_dark.xml" value="0.139" />
+        <entry key="..\:/Users/ALI/AndroidStudioProjects/Foody/app/src/main/res/drawable/ic_heart.xml" value="0.139" />
+        <entry key="..\:/Users/ALI/AndroidStudioProjects/Foody/app/src/main/res/drawable/ic_launcher_background.xml" value="0.139" />
+        <entry key="..\:/Users/ALI/AndroidStudioProjects/Foody/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.139" />
+        <entry key="..\:/Users/ALI/AndroidStudioProjects/Foody/app/src/main/res/drawable/ic_leaf.xml" value="0.1295" />
         <entry key="..\:/Users/ALI/AndroidStudioProjects/Foody/app/src/main/res/drawable/ic_menu_book.xml" value="0.1385" />
+        <entry key="..\:/Users/ALI/AndroidStudioProjects/Foody/app/src/main/res/drawable/ic_sad.xml" value="0.139" />
+        <entry key="..\:/Users/ALI/AndroidStudioProjects/Foody/app/src/main/res/drawable/ic_share.xml" value="0.139" />
         <entry key="..\:/Users/ALI/AndroidStudioProjects/Foody/app/src/main/res/font/courgette.xml" value="0.23020833333333332" />
         <entry key="..\:/Users/ALI/AndroidStudioProjects/Foody/app/src/main/res/layout/activity_details.xml" value="0.2" />
         <entry key="..\:/Users/ALI/AndroidStudioProjects/Foody/app/src/main/res/layout/activity_main.xml" value="0.22" />
@@ -25,6 +35,10 @@
         <entry key="..\:/Users/ALI/AndroidStudioProjects/Foody/app/src/main/res/menu/favorite_recipes_menu.xml" value="0.1" />
         <entry key="..\:/Users/ALI/AndroidStudioProjects/Foody/app/src/main/res/menu/favorites_contextual_menu.xml" value="0.1734375" />
         <entry key="..\:/Users/ALI/AndroidStudioProjects/Foody/app/src/main/res/menu/recipes_menu.xml" value="0.2" />
+        <entry key="..\:/Users/ALI/AndroidStudioProjects/Foody/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.139" />
+        <entry key="..\:/Users/ALI/AndroidStudioProjects/Foody/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.139" />
+        <entry key="..\:/Users/ALI/AndroidStudioProjects/Foody/app/src/main/res/xml/fragment_overview_scene.xml" value="0.2" />
+        <entry key="..\:/Users/ALI/AndroidStudioProjects/Foody/app/src/main/res/xml/xml.xml" value="0.2" />
       </map>
     </option>
   </component>
