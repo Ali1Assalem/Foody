@@ -93,10 +93,9 @@
 
                 <TextView
                     android:id="@+id/favorite_heart_textView"
-                    setNumberOfLikes="@{String.valueOf(favoritesEntity.result.aggregateLikes)}"
+                    text="@{String.valueOf(favoritesEntity.result.aggregateLikes)}"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="100"
                     android:fontFamily="@font/ubuntu_medium"
                     android:textAlignment="center"
                     android:textColor="@color/red"
@@ -115,11 +114,10 @@
 
                 <TextView
                     android:id="@+id/favorite_clock_textView"
-                    setNumberOfMinutes="@{String.valueOf(favoritesEntity.result.readyInMinutes)}"
+                    text="@{String.valueOf(favoritesEntity.result.readyInMinutes)}"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="24dp"
-                    android:text="100"
                     android:fontFamily="@font/ubuntu_medium"
                     android:textAlignment="center"
                     android:textColor="@color/yellow"
