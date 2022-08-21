@@ -65,6 +65,7 @@
             readApiResponse2="@{mainViewModel.recipesResponse}"
             readDatabase2="@{mainViewModel.readRecipes}"
             android:layout_marginTop="8dp"
+            android:fontFamily="@font/ubuntu_medium"
             android:alpha="0.5"
             android:textSize="18sp"
             android:textStyle="bold"

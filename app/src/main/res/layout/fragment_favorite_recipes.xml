@@ -59,6 +59,7 @@
             android:alpha="0.5"
             android:text="@string/no_favorite_recipes"
             android:textSize="18sp"
+            android:fontFamily="@font/ubuntu_medium"
             android:textStyle="bold"
             android:visibility="invisible"
             app:layout_constraintEnd_toEndOf="@+id/no_data_imageView"
