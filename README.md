@@ -1,7 +1,10 @@
 # Foody
 MVVM ,Hilt DI ,LiveData ,Flow ,Room ,Retrofit ,Coroutine , Navigation Component ,DataStore ,DataBinding , ViewBinding, Coil
 <br>
-<img align="right" src="https://user-images.githubusercontent.com/76838562/173254331-aa79eb39-653b-4a1c-8c65-ad3b337ff368.jpg" width="500">
+
+# App Architecture 
+<img  src="https://user-images.githubusercontent.com/76838562/173254331-aa79eb39-653b-4a1c-8c65-ad3b337ff368.jpg" width="500">
+
 
 # Main Features
 1. Kotlin
@@ -17,8 +20,8 @@ MVVM ,Hilt DI ,LiveData ,Flow ,Room ,Retrofit ,Coroutine , Navigation Component 
 11. Single Activity Architecture
 12. Coil
 
-<br>
-<br>
+# Screenshots 
+
 <p align="center">
   <img src="https://user-images.githubusercontent.com/76838562/185790413-4a54991f-de8e-4869-a2db-a8f0aae50e86.png" width="250"/>
   <img src="https://user-images.githubusercontent.com/76838562/185790417-c1ddcb6a-791e-4f56-911c-2140cd759ccc.png" width="250"/>
@@ -47,4 +50,4 @@ MVVM ,Hilt DI ,LiveData ,Flow ,Room ,Retrofit ,Coroutine , Navigation Component 
 
 ### Author
 
-@ALI
+[@ALI](https://www.linkedin.com/in/ali-assalem-4769371a8/)
