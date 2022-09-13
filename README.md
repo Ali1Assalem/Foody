@@ -3,7 +3,10 @@ MVVM ,Hilt DI ,LiveData ,Flow ,Room ,Retrofit ,Coroutine , Navigation Component 
 <br>
 
 # App Architecture 
-<img  src="https://user-images.githubusercontent.com/76838562/173254331-aa79eb39-653b-4a1c-8c65-ad3b337ff368.jpg" width="500">
+<p align="center">
+    <img  src="https://user-images.githubusercontent.com/76838562/173254331-aa79eb39-653b-4a1c-8c65-ad3b337ff368.jpg" width="500"/>
+</p>
+<br>
 
 
 # Main Features
